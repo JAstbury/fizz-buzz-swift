@@ -46,21 +46,24 @@ class ViewController: UIViewController {
         let response = unwrappedGame.play(move: move)
         gameScore = response.score
     }
+    
+    @IBOutlet weak var numberButton: UIButton!
+    @IBOutlet weak var fizzButton: UIButton!
+    @IBOutlet weak var buzzButton: UIButton!
+    @IBOutlet weak var fizzBuzzButton: UIButton!
+
 
 
     @IBAction func buttonTapped(_ sender: UIButton) {
-        if sender == numberButton {
-            play(move: Move.Number)
+        if sender == fizzBuzzButton {
+            play(move: Move.FizzBuzz)
         } else if sender == fizzButton {
             play(move: Move.Fizz)
         } else if sender == buzzButton {
             play(move: Move.Buzz)
-        }
+        } else {
+            play(move: Move.Number)
+    }
     }
 
-
-    @IBOutlet weak var numberButton: UIButton!
-    @IBOutlet weak var fizzButton: UIButton!
-    @IBOutlet weak var buzzButton: UIButton!
 }
-

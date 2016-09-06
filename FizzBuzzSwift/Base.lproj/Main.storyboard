@@ -61,7 +61,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2Y-MJ-81e">
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzBuzzButton"/>
                                         <state key="normal" title="" image="space" backgroundImage="button_border"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tbm-pv-MJ7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBR-qb-yME">
                                         <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
@@ -115,6 +119,7 @@
                     <connections>
                         <outlet property="buzzButton" destination="ZBR-qb-yME" id="9CO-H7-Pt3"/>
                         <outlet property="fizzButton" destination="TDP-1L-g00" id="pOH-hd-MSO"/>
+                        <outlet property="fizzBuzzButton" destination="m2Y-MJ-81e" id="dah-hq-9xc"/>
                         <outlet property="numberButton" destination="esf-Vo-WMG" id="htW-FE-q8o"/>
                     </connections>
                 </viewController>

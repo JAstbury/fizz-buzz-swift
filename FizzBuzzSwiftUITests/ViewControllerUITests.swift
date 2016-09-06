@@ -36,7 +36,8 @@ class ViewControllerUITests: XCTestCase {
         let newScore = numberButton.label
         XCTAssertEqual(newScore, "1")
     }
-    Misplaced View Group
+
+    
     func testTapNumberButtonTwiceIncrementsScore() {
         let app = XCUIApplication()
         let numberButton = app.buttons["numberButton"]
@@ -71,5 +72,39 @@ class ViewControllerUITests: XCTestCase {
         buzzButton.tap()
         let newScore = numberButton.label
         XCTAssertEqual(newScore, "5")
+    }
+    
+    func testTapFizzBuzzButtonIncrementsTo15() {
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
+        let fizzbuzzButton = app.buttons["fizzBuzzButton"]
+        
+        playTo14()
+        
+        fizzbuzzButton.tap()
+        let newScore = numberButton.label
+        XCTAssertEqual(newScore, "15")
+    }
+    
+    func playTo14() {
+        let app = XCUIApplication()
+        let numberButton = app.buttons["numberButton"]
+        let fizzButton = app.buttons["fizzButton"]
+        let buzzButton = app.buttons["buzzButton"]
+        
+        numberButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        numberButton.tap()
+        buzzButton.tap()
+        fizzButton.tap()
+        numberButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        buzzButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        numberButton.tap()
+        numberButton.tap()
     }
 }
