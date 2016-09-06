@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzzSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,102 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zca-0l-4pR">
+                                <frame key="frameInset" minX="218" minY="606" width="132" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Play Again">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.67843137254901964" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="20" name="Avenir-Heavy"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLX-R2-UQ7">
+                                <frame key="frameInset" minX="308" minY="20" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="3/5">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.67843137254901964" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="Avenir-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKu-ed-q5x">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esf-Vo-WMG">
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="0">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.98431372549019602" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="70" name="Avenir-Book"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDP-1L-g00">
+                                        <state key="normal" image="champagne" backgroundImage="button_border"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2Y-MJ-81e">
+                                        <state key="normal" title="" image="space" backgroundImage="button_border"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBR-qb-yME">
+                                        <state key="normal" title="" image="lightning" backgroundImage="button_border"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25236681900298419" green="0.71300717647147471" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="m2Y-MJ-81e" firstAttribute="height" secondItem="esf-Vo-WMG" secondAttribute="height" id="A3J-DM-s3O"/>
+                                    <constraint firstItem="esf-Vo-WMG" firstAttribute="leading" secondItem="fKu-ed-q5x" secondAttribute="leading" id="G7X-7f-m6K"/>
+                                    <constraint firstItem="ZBR-qb-yME" firstAttribute="leading" secondItem="fKu-ed-q5x" secondAttribute="leading" id="L2b-Gh-cHX"/>
+                                    <constraint firstItem="esf-Vo-WMG" firstAttribute="width" secondItem="fKu-ed-q5x" secondAttribute="width" multiplier="0.48" id="LVC-Qn-7rJ"/>
+                                    <constraint firstItem="esf-Vo-WMG" firstAttribute="height" secondItem="fKu-ed-q5x" secondAttribute="height" multiplier="0.48" id="SO0-Jt-7e2"/>
+                                    <constraint firstItem="esf-Vo-WMG" firstAttribute="top" secondItem="fKu-ed-q5x" secondAttribute="top" id="bWO-73-XGB"/>
+                                    <constraint firstItem="ZBR-qb-yME" firstAttribute="height" secondItem="esf-Vo-WMG" secondAttribute="height" id="ba7-Ke-K9i"/>
+                                    <constraint firstItem="ZBR-qb-yME" firstAttribute="width" secondItem="esf-Vo-WMG" secondAttribute="width" id="bzl-hj-1WD"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZBR-qb-yME" secondAttribute="bottom" id="dHF-ti-opN"/>
+                                    <constraint firstAttribute="bottom" secondItem="m2Y-MJ-81e" secondAttribute="bottom" id="fHR-mO-UeH"/>
+                                    <constraint firstAttribute="width" secondItem="fKu-ed-q5x" secondAttribute="height" multiplier="1:1" id="fVh-ig-YcC"/>
+                                    <constraint firstItem="TDP-1L-g00" firstAttribute="top" secondItem="fKu-ed-q5x" secondAttribute="top" id="pbr-Dk-uhO"/>
+                                    <constraint firstAttribute="trailing" secondItem="TDP-1L-g00" secondAttribute="trailing" id="pc0-MX-d3A"/>
+                                    <constraint firstAttribute="trailing" secondItem="m2Y-MJ-81e" secondAttribute="trailing" id="qPF-kt-PFr"/>
+                                    <constraint firstItem="TDP-1L-g00" firstAttribute="width" secondItem="esf-Vo-WMG" secondAttribute="width" id="qeW-qm-jhz"/>
+                                    <constraint firstItem="m2Y-MJ-81e" firstAttribute="width" secondItem="esf-Vo-WMG" secondAttribute="width" id="vax-xb-IqE"/>
+                                    <constraint firstItem="TDP-1L-g00" firstAttribute="height" secondItem="esf-Vo-WMG" secondAttribute="height" id="yGT-kh-MHv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.2196078431372549" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dLX-R2-UQ7" secondAttribute="trailing" constant="9" id="2K0-dY-gZt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zca-0l-4pR" secondAttribute="bottom" constant="31" id="5Cy-L9-YVB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zca-0l-4pR" secondAttribute="trailing" constant="9" id="IZT-Rl-rtr"/>
+                            <constraint firstItem="fKu-ed-q5x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fqx-zh-LCF"/>
+                            <constraint firstItem="fKu-ed-q5x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8n-sb-ITb"/>
+                            <constraint firstItem="fKu-ed-q5x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="nTr-GL-9JI"/>
+                            <constraint firstItem="dLX-R2-UQ7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qfL-sK-Chg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="103.89805097451276"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+        <image name="champagne" width="49" height="50"/>
+        <image name="lightning" width="29" height="50"/>
+        <image name="space" width="47" height="50"/>
+    </resources>
 </document>

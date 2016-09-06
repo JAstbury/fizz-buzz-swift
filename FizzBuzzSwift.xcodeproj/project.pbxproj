@@ -17,6 +17,7 @@
 		748A94A11D7EC27E005436E8 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A94A01D7EC27E005436E8 /* Brain.swift */; };
 		74CBD9631D7ECF5C000F63B9 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CBD9621D7ECF5C000F63B9 /* GameTests.swift */; };
 		74CBD9651D7ECFB0000F63B9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CBD9641D7ECFB0000F63B9 /* Game.swift */; };
+		74CBD9671D7EFB18000F63B9 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CBD9661D7EFB18000F63B9 /* ViewControllerUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		748A94A01D7EC27E005436E8 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		74CBD9621D7ECF5C000F63B9 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		74CBD9641D7ECFB0000F63B9 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		74CBD9661D7EFB18000F63B9 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				748A94871D7EC1AC005436E8 /* Info.plist */,
 				748A949E1D7EC258005436E8 /* BrainTests.swift */,
 				74CBD9621D7ECF5C000F63B9 /* GameTests.swift */,
+				74CBD9661D7EFB18000F63B9 /* ViewControllerUnitTests.swift */,
 			);
 			path = FizzBuzzSwiftTests;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				748A949F1D7EC258005436E8 /* BrainTests.swift in Sources */,
 				74CBD9631D7ECF5C000F63B9 /* GameTests.swift in Sources */,
+				74CBD9671D7EFB18000F63B9 /* ViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
