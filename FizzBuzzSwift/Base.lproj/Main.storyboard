@@ -50,26 +50,32 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKu-ed-q5x">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esf-Vo-WMG">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esf-Vo-WMG">
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="button_border">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="0">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.98431372549019602" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="70" name="Avenir-Book"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                            <color key="titleColor" red="0.98431372549019602" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDP-1L-g00">
-                                        <state key="normal" image="champagne" backgroundImage="button_border"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xd3-1z-SOG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2Y-MJ-81e">
                                         <state key="normal" title="" image="space" backgroundImage="button_border"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBR-qb-yME">
-                                        <state key="normal" title="" image="lightning" backgroundImage="button_border"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
+                                        <state key="normal" image="lightning" backgroundImage="button_border"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M1J-Gd-p5r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDP-1L-g00">
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbc-rq-EEu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25236681900298419" green="0.71300717647147471" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,10 +112,15 @@
                             <constraint firstItem="dLX-R2-UQ7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qfL-sK-Chg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buzzButton" destination="ZBR-qb-yME" id="9CO-H7-Pt3"/>
+                        <outlet property="fizzButton" destination="TDP-1L-g00" id="pOH-hd-MSO"/>
+                        <outlet property="numberButton" destination="esf-Vo-WMG" id="htW-FE-q8o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="103.89805097451276"/>
+            <point key="canvasLocation" x="-449" y="159"/>
         </scene>
     </scenes>
     <resources>
